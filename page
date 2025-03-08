@@ -16,8 +16,8 @@ export default function PortfolioQA() {
         setScanActive(false);
         setShowBug(true);
         setBugPosition({
-          top: `${Math.random() * 80 + 10}%`,
-          left: `${Math.random() * 80 + 10}%`,
+          top: ${Math.random() * 80 + 10}%,
+          left: ${Math.random() * 80 + 10}%,
         });
         setTimeout(() => setShowBug(false), 3000);
       }, 1500);
@@ -37,7 +37,7 @@ export default function PortfolioQA() {
     <div className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white p-6 font-mono overflow-hidden">
       {/* Scanner Animation */}
       <div
-        className={`absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-cyan-400/30 to-transparent ${scanActive ? "animate-scan" : "opacity-0"}`}
+        className={absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-cyan-400/30 to-transparent ${scanActive ? "animate-scan" : "opacity-0"}}
       ></div>
 
       {/* Bug Hidden Animation */}
